@@ -7,6 +7,8 @@ const svButton = document.querySelector('.save-button');
 const cancelButton = document.querySelector('.cancel-button');
 const addButton = document.querySelector('.add-button');
 const rowCards = document.querySelector('.row-card');
+const daftarData = document.querySelector('.daftar-data');
+const isiData = document.querySelector('.isi-data');
 
 
 //Menampilkan data Author
@@ -169,7 +171,7 @@ function updateUICard(data){
             cards += templateCard(element);
         })
     
-
+    daftarData.innerHTML = `Data ( ${data.length} )`;
     rowCards.innerHTML = cards;
 
 
